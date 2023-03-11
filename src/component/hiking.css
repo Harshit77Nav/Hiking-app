@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sectionA{
+    background-image: url("./images/541745.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    column-gap: 20px;
+    padding: 0 40px 0 40px;
+    cursor: pointer;
+}
+.navbar1{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content: space-between;
+    list-style: none;
+    column-gap: 20px;
+    padding: 0 40px 0 40px;
+    cursor: pointer;
+}
+.navbar li{
+    width: 100px;
+}
+.navbar li:focus{
+    color: white;
+    background-color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+}
+.search{
+    border-radius: 50px;
+    width: 150px;
+    padding: 0 10px 0 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 48vw 48vw;
+    justify-content: center;
+    height: 95vh;
+}
+.mountainimg{
+    width: 20vw;
+    height: 40vh;
+}
+.card{
+    width: 30vw;
+    margin: auto;
+    background-color: rgba(255, 166, 0, 0.329);
+    padding: 10px;
+}
+.cardcontainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.heading{
+    font-size: 80px;
+    margin-top: -100px;
+}
+.subheading{
+    font-size: 40px;
+    font-family: cursive;
+}
+.para{
+    width: 30vw;
+    margin: auto;
+}
+.learnbtn{
+    background: transparent;
+    font-size: larger;
+    color: white;
+    border-radius: 50px;
+    width: 150px;
+    border: 5px solid white;
+    margin-top: 50px;
+}
+.sectionB{
+    height: 98vh;
+    background-color: rgb(255, 196, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+}
+.sectionB div p{
+    font-size: 4rem;
+}
+.quetesBox{
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    box-shadow: 5px 10px 30px grey;
+}
+.sectionC{
+    background-image: url("./images/hiking.jpg");
+    height: 98vh;
+    background-size: cover;
+}
+.level{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    justify-content: center;
+    padding-top: 50px;
+}
+.footerhead{
+    font-size: 40px;
+    padding-top: 50px;
+}
+.userlevel{
+    font-size: 35px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+    margin: 0 5px 0 5px;
+}
+.footerbtn{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar1{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .grid{
+        grid-template-columns: auto;
+    }
+    .level{
+        grid-template-columns: auto;
+        color: white;
+    }
+    .card{
+        width: auto;
+    }
+    .para{
+        width: auto;
+    }
+    .mountainimg{
+        width: 200px;
+        height: 150px;
+    }
+    .heading{
+        font-size: 40px;
+        margin-top: -60px;
+        
+    }
+    .subheading{
+        font-size: 20px;
+    }
+    .learnbtn{
+        color: black;
+        border-color: black;
+    }
+    .sectionB div p{
+        font-size: 2rem;
+    }
+    .quetesBox{
+        width: auto;
+    }
+    .footerhead{
+        padding-top: 0px;
+    }
+    .userlevel{
+        padding-bottom: 5px;
+    }
+    .footerbtn{
+        margin-top: 5px;
+        color: white;
+    }
+}
